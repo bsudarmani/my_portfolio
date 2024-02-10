@@ -93,13 +93,11 @@ const [name, setName] = useState('');
     };
   }, []);
     return(
- //Home
-
  <div className='container ' >
   {/* navbar */}
   <Navbar expand="sm" >
       <Container >
-        <Navbar.Brand href="/home" ><span className='text-light h2'>S</span><span className='text-success h2'>M</span></Navbar.Brand>
+        <Navbar.Brand href="/home" ><span className='text-light h2'>S  </span><span className='text-success h2'>M</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" type='button' />
         <Navbar.Collapse id="navbarScroll" className='navbar-toggle ' >
           <Nav className='text m-auto'  >
@@ -115,9 +113,9 @@ const [name, setName] = useState('');
   {/* cursor  control*/}
 <div className="custom-cursor-outer " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
- 
+ {/* home */}
 <div className='container row  ' id='home'>
-       <div className=' col-sm-12 col-md-6 col-lg-6 col-xl-6 py-1'>
+       <div className='container col-sm-12 col-md-12 col-lg-12 col-xl-6 py-1'>
              <div className='m-5'>
                  <div className='align-item-center'>
                     {/* <h4 className='text-light'>WELCOME TO  MY WEB PAGE</h4> */}
@@ -141,7 +139,7 @@ const [name, setName] = useState('');
         </div>
         <div className=' container col-sm-12 col-md-6 col-lg-6 col-xl-6    '>
           <div className='mx-3'>
-          <img className='home-img rounded' src={img} alt='img' width={400} height={400}></img>
+          <img className='home-img rounded' src={img} alt='img' width={350} height={350}></img>
           </div>
         </div>
 </div>
@@ -151,7 +149,7 @@ const [name, setName] = useState('');
    <p className='text-center h5'>My <span className='text-success'>Self</span></p>
  </div>
  <div className='row container m-1' >
-  <div className='col-sm-12 col-md-6 col-lg-6 col-xl-6 '>
+  <div className='container col-sm-12 col-md-6 col-lg-6 col-xl-6 '>
   <div className='row py-5'>
      <div className='col-6 my-2'>
       <img className='' src={graduation} alt='' width={80} height={80}></img> 
@@ -185,8 +183,8 @@ const [name, setName] = useState('');
      </div>
   </div>
   </div>
-  <div className='col-sm-12 col-md-6 col-lg-6 col-xl-6 my-5'>
-     <p className=' lead '>Greetings !✨, Welcome! I'm Sudarmani, a web developer with a passion for crafting digital wonders.
+  <div className='col-sm-10 col-md-6 col-lg-6 col-xl-6 my-5'>
+     <p className=' lead container'>Greetings !✨, Welcome! I'm Sudarmani, a web developer with a passion for crafting digital wonders.
       🌐 Armed with  a 🎓 BSc in Computer Science from ANJAC College 🏫, Sivakasi, I've been on a quest to innovate and create, I specialize in [Im self-starter also always eager to learn new technology.]
        💻 My code is a fusion of creativity and precision, ensuring seamless and visually stunning websites.
         🎨 From concept to execution, I transform ideas into interactive experiences that leave a lasting impact. 
@@ -196,9 +194,9 @@ const [name, setName] = useState('');
   </div>
  </div>
 {/* Skills */}
-<div className='container p-5 m-5'  id='skills'>
-<h2 className='text-center'>My <span className='text-success'>Skills</span></h2>
-  <p className='text-center lead p-4 m-4 '>Dedicated to crafting aesthetic user experiences with modern front-end architecture, I embrace the responsibility of creating visually compelling digital journeys.</p>
+<div className='  m-5'  id='skills'>
+<h2 className=''>My <span className='text-success'>Skills</span></h2>
+  <p className=' lead  '>Dedicated to crafting aesthetic user experiences with modern front-end architecture, I embrace the responsibility of creating visually compelling digital journeys.</p>
   <div className='row'>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
      <h3 className='m-1 h4'>Language & Script </h3>
@@ -242,7 +240,7 @@ const [name, setName] = useState('');
          <div class="card-body">
          <h5 class="card-title text-center  text-success ">portofilo</h5>
          <p class="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
-          <button className='btn btn-success mb-3 btn-block '>Visit page<span><i className='fa fa-arrow-right mx-1'></i></span></button>
+          <button className='btn btn-success btn-block my-1'>Visit page<span><i className='fa fa-arrow-right my-1 mx-2'></i></span></button>
          </div>
       </div>
     </div>
@@ -297,7 +295,7 @@ const [name, setName] = useState('');
  <div id='contact'>
  <h1 className='text-center h2 m-3 p-3 mb-5'>Contact <span class='text-success'> Me</span></h1>
  <div className='container row' >
-  <div className=' container col-sm-12 col-md-6 col-lg-6 col-xl-6 align-item-center justify-content-center '>
+  <div className=' container col-sm-10 col-md-6 col-lg-6 col-xl-6 align-item-center justify-content-center '>
         <form onSubmit={handleSubmit } className='emailForm' ref={form}>
       <input
         type="text"
@@ -338,16 +336,16 @@ const [name, setName] = useState('');
  {/* footer */}
  <h3 className='text-light h2 text-center align-item-center m-3 p-3'>Let's <span className='text-success'> connect</span></h3>
  <div className='container row   my-3  '>
-  <div className=' container col-sm-12 '>
+  <div className=' col-sm-12  col-md-12 col-lg-12 col-xl-12 '>
     <div className=' d-flex  fa-footer'>
-    <i className='bi bi-github   '></i>
-    <i className='bi bi-facebook'></i>
-    <i className='bi bi-linkedin  '></i>
+    <i className='fa fa-github fa-home   '></i>
+    <i className='fa fa-facebook fa-home'></i>
+    <i className='fa fa-linkedin fa-home '></i>
     </div>
   </div>
  </div>
- <h1 className='text-center h6'> Developed  By Sudarmani </h1>
- {/* </span> <span className='text-light'>❤</span> */}
+ <h1 className='text-center h6'> Developed  By <span className='text-success'>Sudarmani</span> <span className='text-light '>❤</span> </h1>
+
 </div> 
 
 ) 
