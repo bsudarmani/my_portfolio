@@ -346,8 +346,8 @@ const [name, setName] = useState('');
     </div>
   </div>
  </div>
- <h1 className='text-center h6'> Developed  By  <span className='text-success'>Sudarmani </span> <span className='text-light'>❤</span></h1>
- 
+ <h1 className='text-center h6'> Developed  By Sudarmani </h1>
+ {/* </span> <span className='text-light'>❤</span> */}
 </div> 
 
 ) 
