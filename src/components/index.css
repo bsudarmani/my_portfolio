@@ -83,6 +83,10 @@ body{
      font-size:27px; 
     padding: 10px 10px;
     margin:10px 10px; 
+    color:#198957;
+}
+.fa-home:hover{
+  color: #000;
 }
 .home-img
 {
@@ -98,12 +102,12 @@ body{
      font-size:30px;   
       margin: 0px 300px;  
 }
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
    .fa-footer{
     font-size:20px;   
     margin: 0px 40px;  
    }
-  }
+  } */
 .fa-footer i{
     /* align-items: center;
    justify-content: center; */
@@ -171,3 +175,24 @@ clip-path: circle();
     border-radius: 5px;
     margin: 0px 25px;
   }
+  .home{
+      overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 720px) and (min-width: 0px) {
+    .fa-footer {
+      width: 100; 
+      padding: 2px 2px;
+      margin: 1px 1px;     
+    }
+}
+.pre-loader-container {
+  display: grid; 
+  place-items: center; 
+  height: 100vh;
+}
+
+.pre-loader {
+   display: flex;
+}

@@ -30,11 +30,20 @@ import './index.css';
 import { useTypewriter } from 'react-simple-typewriter';
 import React, { useRef,useState ,useEffect} from 'react';
 import emailjs from '@emailjs/browser';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+import PuffLoader from "react-spinners/PuffLoader";
 const Home=()=>
 {
+   const [loading,setloading]=useState(false);
+   useEffect(()=>
+   {
+    setloading(true)
+    setTimeout(()=>{
+    setloading(false);
+    },5000)
+   },[])
      const [text]=useTypewriter({
     words:[   "MERN Stack developer."," Web developer ." ,"Java developer .","Js Developer."],
    loop:false,
@@ -93,9 +102,10 @@ const [name, setName] = useState('');
     };
   }, []);
     return(
- <div className='container ' >
+ <div className='container overflow-hidden ' >
+  <div className=''>
   {/* navbar */}
-  <Navbar expand="sm" >
+  {/* <Navbar expand="sm" >
       <Container >
         <Navbar.Brand href="/home" ><span className='text-light h2'>S  </span><span className='text-success h2'>M</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" type='button' />
@@ -109,12 +119,26 @@ const [name, setName] = useState('');
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar> */}
   {/* cursor  control*/}
+  {
+    loading ?  
+    <div className="pre-loader-container">
+      <PuffLoader
+        color={"#198957"}
+        loading={loading}
+        size={100}
+        className='pre-loader'
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    </div> 
+  :
+<div>
 <div className="custom-cursor-outer " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  {/* home */}
-<div className='container row  ' id='home'>
+<div className='container row  home ' id='home'>
        <div className='container col-sm-12 col-md-12 col-lg-12 col-xl-6 py-1'>
              <div className='m-5'>
                  <div className='align-item-center'>
@@ -129,11 +153,22 @@ const [name, setName] = useState('');
                      <p className='lead'> Welcome to my web development portfolio .</p>
                  </div>
                  <div className='fa-head'>
-                 <i class="fa fa-envelope fa-home"></i>
-                 <i className='fa fa-github fa-home '></i>
-                 <i className='fa fa-facebook fa-home '></i>
-                 <i className='fa fa-linkedin fa-home '></i>
-                 <i class="fa fa-instagram fa-home"></i>
+                 <a href='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox'>
+                <i className='fa fa-envelope fa-home'></i>
+                </a>
+                <a href='https://github.com/bsudarmani/'>
+                <i className='fa fa-github fa-home'></i>
+                </a>
+                <a href='https://in.linkedin.com/in/sudarmani-b-564ba7280?trk=public_profile_browsemap'>
+                <i className='fa fa-linkedin fa-home'></i>
+                </a>
+                <a href='https://www.instagram.com/sudarmani05/'>
+                <i className='fa fa-instagram fa-home'></i>
+                </a>
+                <a href='https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fconfirmemail.php%3Fnext%3Dhttps%253A%252F%252Fwww.facebook.com%252F'>
+                <i className='fa fa-facebook fa-home'></i>
+                </a>
+  
                  </div>
              </div>
         </div>
@@ -229,19 +264,24 @@ const [name, setName] = useState('');
   </div>
 </div>
  {/* Projects*/}
- <h2 className='text-center'>My <span className='text-success'>Projects</span></h2>
+ <h2 className='text-center m-2'>My <span className='text-success'>Projects</span></h2>
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
- <div className='p-2 row  m-2 ' id='project'>
+ <div className=' row   ' id='project'>
 
-        <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
-    <div className='card  text-light my-4'>
-       <div class="card-body  m-2">
-        <img src={developer} class="card-img-top" width={150} height={150} alt="..."/>
-         <div class="card-body">
-         <h5 class="card-title text-center  text-success ">portofilo</h5>
-         <p class="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
-          <button className='btn btn-success btn-block my-1'>Visit page<span><i className='fa fa-arrow-right my-1 mx-2'></i></span></button>
-         </div>
+      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
+    <div className='container card  text-light '>
+       <div class="container card-body ">
+        <img src={developer} class="card-img-top" width={120} height={120} alt="..."/>
+       <h5 className="card-title text-center text-success">Portfolio</h5>
+      <p className="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
+      <div className="d-flex justify-content-center">
+      <a href='https://github.com/bsudarmani/my_portfolio/'>
+          <i className='fa fa-github fa-home'></i>
+      </a>
+      <a href='http://localhost:3000/home/'>
+          <i className='fa fa-chrome fa-home'></i>
+      </a>
+      </div>
       </div>
     </div>
     </div>
@@ -338,14 +378,22 @@ const [name, setName] = useState('');
  <div className='container row   my-3  '>
   <div className=' col-sm-12  col-md-12 col-lg-12 col-xl-12 '>
     <div className=' d-flex  fa-footer'>
-    <i className='fa fa-github fa-home   '></i>
-    <i className='fa fa-facebook fa-home'></i>
-    <i className='fa fa-linkedin fa-home '></i>
+    <a href='https://github.com/bsudarmani/'>
+        <i className='fa fa-github fa-home'></i>
+    </a>
+    <a href='https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fconfirmemail.php%3Fnext%3Dhttps%253A%252F%252Fwww.facebook.com%252F'>
+        <i className='fa fa-facebook fa-home'></i>
+    </a>
+    <a href='https://in.linkedin.com/in/sudarmani-b-564ba7280?trk=public_profile_browsemap'>
+      <i className='fa fa-linkedin fa-home'></i>
+    </a>
     </div>
   </div>
  </div>
- <h1 className='text-center h6'> Developed  By <span className='text-success'>Sudarmani</span> <span className='text-light '>❤</span> </h1>
-
+ <h1 className='text-center h6'> Developed  By <span className='text-success'>Sudarmani</span> <span className='text-ligh '>🤍 </span> </h1>
+ </div>
+}
+</div>
 </div> 
 
 ) 
