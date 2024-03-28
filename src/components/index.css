@@ -112,7 +112,7 @@ body{
     /* align-items: center;
    justify-content: center; */
    /* padding: 0px 0px; */
-   margin: 0px 60px;
+   margin: 0px 100px;
 }
 .fa-footer i:hover{
 clip-path: circle();
@@ -148,7 +148,7 @@ clip-path: circle();
   }
   
   .visible {
-    opacity: 0.1; /* Make cursor visible */
+    opacity: 0.1; 
   }
   
   @keyframes pulse {
@@ -175,18 +175,6 @@ clip-path: circle();
     border-radius: 5px;
     margin: 0px 25px;
   }
-  .home{
-      overflow-x: hidden;
-}
-
-
-@media only screen and (max-width: 720px) and (min-width: 0px) {
-    .fa-footer {
-      width: 100; 
-      padding: 2px 2px;
-      margin: 1px 1px;     
-    }
-}
 .pre-loader-container {
   display: grid; 
   place-items: center; 
@@ -195,4 +183,54 @@ clip-path: circle();
 
 .pre-loader {
    display: flex;
+}
+@media only screen and (min-width: 300px) and  (max-width: 400px) {
+  .h7{
+    font-size: 50px;
+    margin: 0px 0px;
+  }
+  .rounded{
+    margin: 0px -10px;
+    width: 110%;
+    height: 70%;
+  }
+  .get-resume{
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+  }
+  .submit{
+    width: 150px;
+    margin: 0px 40px;
+  }
+  .about{
+    width:80px;
+  }
+  .about-letter{
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 300px) and  (max-width: 1400px) {
+  .d-flex.fa-footer{
+   display: none;
+  }
+  .fa-foot-icon{
+    display: none;
+  }
+  .let-connect
+  {
+    display: none;
+  }
+}
+@media only screen and (min-width: 340px) and  (max-width: 400px)
+{
+  .submit{
+    margin: 10px 80px;
+  }
+}
+@media only screen and (min-width: 400px) and  (max-width: 450px)
+{
+  .submit{
+    margin: 10px 80px;
+  }
 }

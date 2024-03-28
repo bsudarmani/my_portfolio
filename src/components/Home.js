@@ -138,8 +138,8 @@ const [name, setName] = useState('');
 <div className="custom-cursor-outer " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  {/* home */}
-<div className='container row  home ' id='home'>
-       <div className='container col-sm-12 col-md-12 col-lg-12 col-xl-6 py-1'>
+<div className=' row  home ' id='home'>
+       <div className=' col-sm-12 col-md-12 col-lg-12 col-xl-6 py-1'>
              <div className='m-5'>
                  <div className='align-item-center'>
                     {/* <h4 className='text-light'>WELCOME TO  MY WEB PAGE</h4> */}
@@ -172,9 +172,9 @@ const [name, setName] = useState('');
                  </div>
              </div>
         </div>
-        <div className=' container col-sm-12 col-md-6 col-lg-6 col-xl-6    '>
-          <div className='mx-3'>
-          <img className='home-img rounded' src={img} alt='img' width={350} height={350}></img>
+        <div className='  col-sm-12 col-md-6 col-lg-6 col-xl-6    '>
+          <div className=''>
+          <img className='home-img rounded ' src={img} alt='img' width={350} height={350}></img>
           </div>
         </div>
 </div>
@@ -187,35 +187,35 @@ const [name, setName] = useState('');
   <div className='container col-sm-12 col-md-6 col-lg-6 col-xl-6 '>
   <div className='row py-5'>
      <div className='col-6 my-2'>
-      <img className='' src={graduation} alt='' width={80} height={80}></img> 
+      <img className='about' src={graduation} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5'>2<span className='text-success'>+</span>Yrs of experience</span>
+      <span className='h5 about-letter'>2<span className='text-success'>+</span>Yrs of experience</span>
      </div>
      <div className='col-6 my-2'>
-      <img className='' src={project} alt='' width={80} height={80}></img> 
+      <img className='about' src={project} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5'>5<span className='text-success'>+</span>Completed</span>
+      <span className='h5 about-letter'>5<span className='text-success'>+</span>Completed</span>
      </div>
      <div className='col-6 my-2'>
-      <img className='' src={certificate} alt='' width={80} height={80}></img> 
+      <img className='about' src={certificate} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5'>10<span className='text-success'>+</span>Certification</span>
+      <span className='h5 about-letter'>10<span className='text-success'>+</span>Certification</span>
      </div>
      <div className='col-6 my-2'>
-      <img className='' src={tool} alt='' width={80} height={80}></img> 
+      <img className='about' src={tool} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5'>20<span className='text-success'>+</span>Tools</span>
+      <span className='h5 about-letter'>20<span className='text-success'>+</span>Tools</span>
      </div>
      <div className='col-6 my-2'>
-      <img className='' src={programming} alt='' width={80} height={80}></img> 
+      <img className='about' src={programming} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5'>5<span className='text-success'>+</span>Programming language </span>
+      <span className='h5 about-letter'>5<span className='text-success'>+</span>Programming language </span>
      </div>
-     <div className='col-6 my-3'>
-      <img className='rounded' src={gfg} alt='' width={50} height={50}></img> 
+     {/* <div className='col-6 my-3'>
+      <img className='rounded about' src={gfg} alt='' width={50} height={50}></img> 
       <br></br>
-      <span className='h5'>30<span className='text-success'>+</span>Problem Solved</span>
-     </div>
+      <span className='h5 about-letter'>30<span className='text-success'>+</span>Problem Solved</span>
+     </div> */}
   </div>
   </div>
   <div className='col-sm-10 col-md-6 col-lg-6 col-xl-6 my-5'>
@@ -225,7 +225,7 @@ const [name, setName] = useState('');
         🎨 From concept to execution, I transform ideas into interactive experiences that leave a lasting impact. 
         Let's collaborate and bring your digital vision to life! 🔧 Explore my portfolio for a glimpse into the world where innovation meets code.</p>
   
-     <button className='btn btn-success b-w  btn-lg'>Get My Resume</button>
+     <button className='btn btn-success b-w  btn-lg get-resume'>Get My Resume</button>
   </div>
  </div>
 {/* Skills */}
@@ -367,25 +367,25 @@ const [name, setName] = useState('');
         required
       >
       </textarea>
-      <button className='btn btn-success mb-5 btn-block btn-lg' type='submit' value='send' >Send Message<span><i className='fa fa-paper-plane mx-2'></i></span></button>
+      <button className='btn btn-success mb-5 btn-block btn-lg submit' type='submit' value='send' >Send Message<span><i className='fa fa-paper-plane mx-2'></i></span></button>
     </form>
 
     </div>
  </div>
  </div>
  {/* footer */}
- <h3 className='text-light h2 text-center align-item-center m-3 p-3'>Let's <span className='text-success'> connect</span></h3>
+ <h3 className='text-light h2 text-center align-item-center m-3 p-3 let-connect'>Let's <span className='text-success'> connect</span></h3>
  <div className='container row   my-3  '>
   <div className=' col-sm-12  col-md-12 col-lg-12 col-xl-12 '>
-    <div className=' d-flex  fa-footer'>
+    <div className=' d-flex  fa-footer '>
     <a href='https://github.com/bsudarmani/'>
-        <i className='fa fa-github fa-home'></i>
+        <i className='fa fa-github fa-home  fa-foot-icon ' ></i>
     </a>
     <a href='https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2Fconfirmemail.php%3Fnext%3Dhttps%253A%252F%252Fwww.facebook.com%252F'>
-        <i className='fa fa-facebook fa-home'></i>
+        <i className='fa fa-facebook fa-home fa-foot-icon'></i>
     </a>
-    <a href='https://in.linkedin.com/in/sudarmani-b-564ba7280?trk=public_profile_browsemap'>
-      <i className='fa fa-linkedin fa-home'></i>
+    <a href='https://in.linkedin.com/in/sudarmani-b-564ba7280?trk=public_profile_browsemap' >
+      <i className='fa fa-linkedin fa-home  fa-foot-icon'></i>
     </a>
     </div>
   </div>
