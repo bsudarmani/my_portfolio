@@ -234,3 +234,9 @@ clip-path: circle();
     margin: 10px 80px;
   }
 }
+@media only screen and (min-width: 338px) and  (max-width: 350px)
+{
+  .submit{
+    margin: 10px 50px;
+  }
+}

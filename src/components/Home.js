@@ -3,7 +3,7 @@ import graduation from '../images/graduation-cap.svg'
 import project from '../images/project.png';
 import programming from '../images/programming.png';
 import certificate from '../images/certificate.svg';
-import gfg from '../images/greeksforgeeks.png';
+// import gfg from '../images/greeksforgeeks.png';
 import tool from '../images/tool.svg';
 import developer from '../images/web-developer.svg'
 import html from '../images/html-5.svg';
@@ -51,13 +51,13 @@ const Home=()=>
     deleteSpeed:100,
     delaySpeed:2000,
   }) ;
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1
+  // };
   const form = useRef();
 const [name, setName] = useState('');
   const [email, setEmail] = useState('');
