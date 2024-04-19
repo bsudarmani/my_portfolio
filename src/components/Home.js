@@ -24,6 +24,7 @@ import mongodb from '../images/mongodb.svg';
 import mysql from '../images/mysql.svg';
 // import npm from '../images/npm.svg';
 // import xampp from '../images/xampp.svg';
+import weather from  '../images/weather.svg';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
@@ -266,7 +267,7 @@ const [name, setName] = useState('');
  {/* Projects*/}
  <h2 className='text-center m-2'>My <span className='text-success'>Projects</span></h2>
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
- <div className=' row   ' id='project'>
+ <div className=' row' id='project'>
 
       <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
     <div className='container card  text-light '>
@@ -278,24 +279,30 @@ const [name, setName] = useState('');
       <a href='https://github.com/bsudarmani/my_portfolio/'>
           <i className='fa fa-github fa-home'></i>
       </a>
-      <a href='http://localhost:3000/home/'>
+      <a href='https://sudarmani.netlify.app/home'>
           <i className='fa fa-chrome fa-home'></i>
       </a>
       </div>
       </div>
     </div>
     </div>
-  {/* <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
-      <div className='card text-light my-4'>
-       <div class="card-body m-2">
-        <img src={img} class="card-img-top" width={100} height={250} alt="..."/>
-         <div class="card-body">
-         <h5 class="card-title text-center  text-success ">Chat application <span><i className='fa fa-github text-success   rounded mx-2'></i><i className='fa fa-globe text-success rounded mx-2'></i></span></h5>
-         <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         </div>
+    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
+    <div className='container card  text-light '>
+       <div class="container card-body ">
+        <img src={weather} class="card-img-top" width={120} height={120} alt="..."/>
+       <h5 className="card-title text-center text-success">Portfolio</h5>
+      <p className="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
+      <div className="d-flex justify-content-center">
+      <a href='https://github.com/bsudarmani/weather_app'>
+          <i className='fa fa-github fa-home'></i>
+      </a>
+      <a href='https://sudarweather.netlify.app/'>
+          <i className='fa fa-chrome fa-home'></i>
+      </a>
+      </div>
       </div>
     </div>
-    </div> */}
+    </div>
     {/* <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
     <div className='card text-light my-4'>
     <div class="card-body m-2">
