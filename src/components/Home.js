@@ -269,7 +269,7 @@ const [name, setName] = useState('');
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
-      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
+      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3'>
     <div className='container card  text-light '>
        <div class="container card-body ">
         <img src={developer} class="card-img-top" width={120} height={120} alt="..."/>
@@ -286,7 +286,7 @@ const [name, setName] = useState('');
       </div>
     </div>
     </div>
-    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
+    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3'>
     <div className='container card  text-light '>
        <div class="container card-body ">
         <img src={weather} class="card-img-top" width={120} height={120} alt="..."/>
