@@ -269,10 +269,10 @@ const [name, setName] = useState('');
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
-      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3'>
+      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5'>
     <div className='container card  text-light '>
        <div class="container card-body ">
-        <img src={developer} class="card-img-top" width={120} height={120} alt="..."/>
+        <img src={developer} class="card-img-top" width={150} height={150} alt="..."/>
        <h5 className="card-title text-center text-success">Portfolio</h5>
       <p className="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
       <div className="d-flex justify-content-center">
@@ -287,12 +287,12 @@ const [name, setName] = useState('');
       </div>
     </div>
     </div>
-    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3'>
+    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5'>
     <div className='container card  text-light '>
        <div class="container card-body ">
         <img src={weather} class="card-img-top" width={120} height={120} alt="..."/>
-       <h5 className="card-title text-center text-success">Portfolio</h5>
-      <p className="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
+       <h5 className="card-title text-center text-success">Weather App</h5>
+      <p className="card-text text-center">Discover my expertise in one click with my weather app, showcasing creativity and skill in delivering accurate forecasts.</p>
       <div className="d-flex justify-content-center">
       <a href='https://github.com/bsudarmani/weather_app'>
           <i className='fa fa-github fa-home'></i>
