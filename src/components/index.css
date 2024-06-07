@@ -287,6 +287,10 @@ clip-path: circle();
  .emailForm{
   padding-left: 20px;
  }
+ .submit
+ {
+  margin-left: 60px;
+ }
 }
 @media (min-width: 400px) and (max-width: 575px)
 {
