@@ -293,6 +293,9 @@ clip-path: circle();
   margin-left: -20px;
   /* margin-right: 30px; */
  }
+ .emailForm{
+  margin-left: 20px;
+ }
  .projects
  {
   width:350px;
