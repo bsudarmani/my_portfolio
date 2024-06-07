@@ -5,7 +5,7 @@ import programming from '../images/programming.png';
 import certificate from '../images/certificate.svg';
 // import gfg from '../images/greeksforgeeks.png';
 import tool from '../images/tool.svg';
-import developer from '../images/web-developer.svg'
+// import developer from '../images/web-developer.svg'
 import html from '../images/html-5.svg';
 import css from '../images/css-3.svg';
 import js from '../images/js.svg';
@@ -35,6 +35,10 @@ import emailjs from '@emailjs/browser';
 // import Nav from 'react-bootstrap/Nav';
 // import Navbar from 'react-bootstrap/Navbar';
 import PuffLoader from "react-spinners/PuffLoader";
+import project1 from '../images/project1 (1).png';
+import project2 from '../images/project21 (1).png';
+import CountUp from 'react-countup';
+
 const Home=()=>
 {
    const [loading,setloading]=useState(false);
@@ -140,7 +144,7 @@ const [name, setName] = useState('');
  <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
  {/* home */}
 <div className=' row  home ' id='home'>
-       <div className=' col-sm-12 col-md-12 col-lg-12 col-xl-6 py-1'>
+       <div className=' col-sm-12 col-md-6 col-lg-6 col-xl-6 py-1'>
              <div className='m-5'>
                  <div className='align-item-center'>
                     {/* <h4 className='text-light'>WELCOME TO  MY WEB PAGE</h4> */}
@@ -174,7 +178,7 @@ const [name, setName] = useState('');
              </div>
         </div>
         <div className='  col-sm-12 col-md-6 col-lg-6 col-xl-6    '>
-          <div className=''>
+          <div className='home_img'>
           <img className='home-img rounded ' src={img} alt='img' width={350} height={350}></img>
           </div>
         </div>
@@ -190,27 +194,27 @@ const [name, setName] = useState('');
      <div className='col-6 my-2'>
       <img className='about' src={graduation} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5 about-letter'>2<span className='text-success'>+</span>Yrs of experience</span>
+      <span className='h5 about-letter'><CountUp start={1} end={3} duration={8}/><span className='text-success'>+</span>Yrs of experience</span>
      </div>
      <div className='col-6 my-2'>
       <img className='about' src={project} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5 about-letter'>5<span className='text-success'>+</span>Completed</span>
+      <span className='h5 about-letter'><CountUp start={1} end={5} duration={8}/><span className='text-success'>+</span>Completed</span>
      </div>
      <div className='col-6 my-2'>
       <img className='about' src={certificate} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5 about-letter'>10<span className='text-success'>+</span>Certification</span>
+      <span className='h5 about-letter'><CountUp start={1} end={10} duration={8}/><span className='text-success'>+</span>Certification</span>
      </div>
      <div className='col-6 my-2'>
       <img className='about' src={tool} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5 about-letter'>20<span className='text-success'>+</span>Tools</span>
+      <span className='h5 about-letter'><CountUp start={1} end={20} duration={8}/><span className='text-success'>+</span>Tools</span>
      </div>
      <div className='col-6 my-2'>
       <img className='about' src={programming} alt='' width={80} height={80}></img> 
       <br></br>
-      <span className='h5 about-letter'>5<span className='text-success'>+</span>Programming language </span>
+      <span className='h5 about-letter'><CountUp start={1} end={5} duration={8}/><span className='text-success'>+</span>Programming language </span>
      </div>
      {/* <div className='col-6 my-3'>
       <img className='rounded about' src={gfg} alt='' width={50} height={50}></img> 
@@ -269,78 +273,50 @@ const [name, setName] = useState('');
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
-      <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5'>
-    <div className='container card  text-light '>
-       <div class="container card-body ">
-        <img src={developer} class="card-img-top" width={150} height={150} alt="..."/>
-       <h5 className="card-title text-center text-success">Portfolio</h5>
-      <p className="card-text text-center">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</p>
-      <div className="d-flex justify-content-center">
-      <a href='https://github.com/bsudarmani/my_portfolio/'>
-          <i className='fa fa-github fa-home'></i>
-      </a>
-      <a href='https://sudarmani.netlify.app/home'>
-          <i className='fa fa-chrome fa-home'></i>
-          
-      </a>
+ <div className='container col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={project1} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">Portfolio</h2>
+        <span class="projects__subtitle mx-5 mb-2">Explore my accomplished portfolio projects, showcasing expertise and creativity in one click.</span>
+       
+        <a href="https://sudarmani.netlify.app/home" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/my_portfolio' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
       </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+   <div className='container col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={project2} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">Weather App</h2>
+        <span class="projects__subtitle mx-5">Discover my expertise in one click with my weather app, showcasing creativity and skill in delivering accurate forecasts.</span>
+        <a href="https://sudarweather.netlify.app/" class="projects__button mb-1">
+          <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/weather_app' class="projects__button">
+          <span>Github <i class="fa fa-github"></i></span>
+        </a>
       </div>
-    </div>
-    </div>
-    <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5'>
-    <div className='container card  text-light '>
-       <div class="container card-body ">
-        <img src={weather} class="card-img-top" width={120} height={120} alt="..."/>
-       <h5 className="card-title text-center text-success">Weather App</h5>
-      <p className="card-text text-center">Discover my expertise in one click with my weather app, showcasing creativity and skill in delivering accurate forecasts.</p>
-      <div className="d-flex justify-content-center">
-      <a href='https://github.com/bsudarmani/weather_app'>
-          <i className='fa fa-github fa-home'></i>
-      </a>
-      <a href='https://sudarweather.netlify.app/'>
-          <i className='fa fa-chrome fa-home'></i>
-      </a>
-      </div>
-      </div>
-    </div>
-    </div>
-    {/* <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
-    <div className='card text-light my-4'>
-    <div class="card-body m-2">
-        <img src={img} class="card-img-top" width={100} height={250} alt="..."/>
-         <div class="card-body">
-         <h5 class="card-title text-center  text-success ">Netflix Clone <span><i className='fa fa-github text-success   rounded mx-2 '></i><i className='fa fa-globe text-success rounded mx-2'></i></span></h5>
-         <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         </div>
-      </div> 
-    </div>
-    </div> */}
-    {/* <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
-    <div className='card text-light my-4'>
-    <div className="card-body m-2">
-        <img src={img} class="card-img-top" width={100} height={250} alt="..."/>
-         <div class="card-body">
-         <h5 class="card-title text-center  text-success ">java Application<span><i className='fa fa-github text-success   rounded mx-2'></i><i className='fa fa-globe text-success rounded mx-2'></i></span></h5>
-         <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         </div>
-      </div>
-      </div>
-      </div> */}
-      {/* <div className='container col-sm-6 col-md-6 col-lg-4 col-xl-4'>
-     <div className='card text-light my-4'>
-     <div class="card-body m-2">
-        <img src={img} class="card-img-top" width={100} height={250} alt="..."/>
-         <div class="card-body">
-         <h5 class="card-title text-center  text-success ">java Appliaction 2<span><i className='fa fa-github text-success   rounded mx-2'></i><i className='fa fa-globe text-success rounded mx-2'></i></span></h5>
-         <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         </div>
-      </div>
-      </div>
-      </div> */}
-        {/* </Slider> */}
+    </article>
+  </div>
+</section>
+   </div>
  </div>
+
  {/* contact */}
- <div id='contact'>
+ <div id='contact' class="contact-form">
  <h1 className='text-center h2 m-3 p-3 mb-5'>Contact <span class='text-success'> Me</span></h1>
  <div className='container row' >
   <div className=' container col-sm-10 col-md-6 col-lg-6 col-xl-6 align-item-center justify-content-center '>
