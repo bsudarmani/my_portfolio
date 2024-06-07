@@ -142,8 +142,8 @@ clip-path: circle();
   }
   .rounded{
     margin: 0px -10px;
-    width: 110%;
-    height: 70%;
+    /* width: 410px;
+    height: 300px; */
   }
   .get-resume{
     width: 90%;
