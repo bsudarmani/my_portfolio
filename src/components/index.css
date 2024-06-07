@@ -199,7 +199,7 @@ clip-path: circle();
 }
 
 .projects {
-  border: 1px solid hsl(228, 15%, 15%);
+  /* border: 1px solid hsl(228, 15%, 15%); */
   width:500px;
   height: 350px;
 }
@@ -272,11 +272,13 @@ clip-path: circle();
 {
   .home-img
   {
-    
+    width:350px;
+    height: 350px;
   }
   .projects
  {
   width:330px;
+  margin-right: -20px;
  }
  .projects__img{
   width:335px;
