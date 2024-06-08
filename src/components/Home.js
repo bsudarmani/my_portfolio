@@ -235,7 +235,7 @@ const [name, setName] = useState('');
  </div>
 {/* Skills */}
 <div className='  m-5'  id='skills'>
-<h2 className=''>My <span className='text-success'>Skills</span></h2>
+<h2 className='text-center mb-3'>My <span className='text-success'>Skills</span></h2>
   <p className=' lead  '>Dedicated to crafting aesthetic user experiences with modern front-end architecture, I embrace the responsibility of creating visually compelling digital journeys.</p>
   <div className='row'>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
@@ -268,8 +268,76 @@ const [name, setName] = useState('');
     </div>
   </div>
 </div>
+{/* resume */}
+<section id="resume" class="resume">
+    <div class="container">
+      <div class="section-title">
+        <h1 className='text-center'>My <span className='text-success'>Resume</span></h1>
+      </div>
+
+      <div class=" row resume-block">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Sudarmani B</h4>
+           <br/>
+            <p>
+            <ul>
+              <li>Rajapalayam,Tamilnadu.</li>
+              <li>(+91) 9843627093</li>
+              <li>bsudarmani045@gmail.com</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Bachelor of Computer Science</h4>
+            <h5>2022 - 2025</h5>
+            <p><em>Ayya nadar janaki ammal college, sivakasi,Tamilnadu.</em></p>
+            <p>▪️ An undergraduate program that deals with the subjects and topics related to computer science, computer application, and its services.
+             <br/> ▪️ Relevant Coursework: C , C++ , Java , SQL , RDBMS , Advanced Java , Mongodb  and Software Development.</p>
+          </div>
+          <div class="resume-item">
+            <h4>High School</h4>
+            <h5>2020 - 2022</h5>
+            <p><em>PACM HSS, Rajapalayam,Tamilnadu</em></p>
+            <p>Completed my High School with Major in 
+              <br/>Computer Science 
+              <br/> Maths , Physics and Chemistry.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+         
+          <div class="resume-item mt-5">
+            <h4>Secondary School</h4>
+            <h5>2019 - 2020</h5>
+            <p><em>PACM HSS, Rajapalayam,Tamilnadu</em></p>
+            <p>Completed my Secondary School .</p>
+          </div>
+          <div class="resume-item">
+            <h3 class="resume-title">Professional Experience</h3>
+            <h4>Software Developer Intern</h4>
+            <h5>May 2024 - June 2024</h5>
+            <p><em>Hepto Technologies,Chennai & Tenkasi, IND</em></p>
+            <p><b>Project:Ering</b></p>
+            <p><b>Task:Develop a Web Page with Dynamic Content </b></p>
+            <p>
+            <ul>
+              <li>During my internship, I utilized HTML, CSS, and JavaScript along with Bootstrap to develop a static website featuring dynamic content. I leveraged jQuery to handle various interactive elements, including a slick slider for enhanced user experience. </li>
+              <li>This internship was very helpful in analyzing CSS, writing media queries, and using Bootstrap for responsive design across all screen sizes.</li>
+              <li>It greatly aided me in handling projects and learning valuable skills, culminating in a successful software development internship.</li>
+              
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
  {/* Projects*/}
- <h2 className='text-center m-2'>My <span className='text-success'>Projects</span></h2>
+ <h2 className='text-center  mt-5'>My <span className='text-success'>Projects</span></h2>
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
