@@ -38,6 +38,9 @@ import PuffLoader from "react-spinners/PuffLoader";
 import project1 from '../images/project1 (1).png';
 import project2 from '../images/project21 (1).png';
 import CountUp from 'react-countup';
+// import PureCounter from '@srexi/purecounterjs';
+// import PureCounter from 'purecounterjs';
+import PureCounter from '@srexi/purecounterjs';
 
 const Home=()=>
 {
@@ -106,6 +109,10 @@ const [name, setName] = useState('');
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+  useEffect(() => {
+    new PureCounter();
+  }, []);
+  const pure = new PureCounter();
     return(
  <div className='container overflow-hidden ' >
   <div className=''>
@@ -149,7 +156,7 @@ const [name, setName] = useState('');
                  <div className='align-item-center'>
                     {/* <h4 className='text-light'>WELCOME TO  MY WEB PAGE</h4> */}
                     <h1 className='text-light'>Hi My name {" "}
-                     <span className='  h7 '>Sudarmani</span>
+                     <span className='  h7 head-text'>Sudarmani</span>
                       </h1>
                      <h2 className='text-light'>
                       I'm an Aspiring <span className='text-light '>{text}</span>
@@ -185,37 +192,95 @@ const [name, setName] = useState('');
 </div>
  {/* About  */}
  <div className=' m-5' id='about'>
-  <h1 className='text-center'>About <span className='text-success'>Me</span></h1>
-   <p className='text-center h5'>My <span className='text-success'>Self</span></p>
+  <h1 className='text-center'>About <span className=' about-title'>Me</span></h1>
+   <p className='text-center h5'>My <span className=' about-title'>Self</span></p>
  </div>
- <div className='row container m-1' >
+ <div className='counts row container m-1' >
   <div className='container col-sm-12 col-md-6 col-lg-6 col-xl-6 '>
   <div className='row py-5'>
-     <div className='col-6 my-2'>
+     {/* <div className='col-6 my-2'>
       <img className='about' src={graduation} alt='' width={80} height={80}></img> 
       <br></br>
       <span className='h5 about-letter'><CountUp start={1} end={3} duration={8}/><span className='text-success'>+</span>Yrs of experience</span>
-     </div>
-     <div className='col-6 my-2'>
+     </div> */}
+
+<div className="col-6 my-2">
+    <img className='about' src={graduation} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="0"
+      data-purecounter-end="3"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Yrs of experience</span>
+</div>
+
+
+     {/* <div className='col-6 my-2'>
       <img className='about' src={project} alt='' width={80} height={80}></img> 
       <br></br>
       <span className='h5 about-letter'><CountUp start={1} end={5} duration={8}/><span className='text-success'>+</span>Completed</span>
-     </div>
-     <div className='col-6 my-2'>
+     </div> */}
+     <div className="col-6 my-2">
+    <img className='about' src={project} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="0"
+      data-purecounter-end="5"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Completed</span>
+    </div>
+     {/* <div className='col-6 my-2'>
       <img className='about' src={certificate} alt='' width={80} height={80}></img> 
       <br></br>
       <span className='h5 about-letter'><CountUp start={1} end={10} duration={8}/><span className='text-success'>+</span>Certification</span>
-     </div>
-     <div className='col-6 my-2'>
+     </div> */}
+     <div className="col-6 my-2">
+    <img className='about' src={certificate} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="0"
+      data-purecounter-end="10"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Certification</span>
+    </div>
+     {/* <div className='col-6 my-2'>
       <img className='about' src={tool} alt='' width={80} height={80}></img> 
       <br></br>
       <span className='h5 about-letter'><CountUp start={1} end={20} duration={8}/><span className='text-success'>+</span>Tools</span>
-     </div>
-     <div className='col-6 my-2'>
+     </div> */}
+     <div className="col-6 my-2">
+    <img className='about' src={tool} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="0"
+      data-purecounter-end="20"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Tools</span>
+    </div>
+     {/* <div className='col-6 my-2'>
       <img className='about' src={programming} alt='' width={80} height={80}></img> 
       <br></br>
       <span className='h5 about-letter'><CountUp start={1} end={5} duration={8}/><span className='text-success'>+</span>Programming language </span>
-     </div>
+     </div> */}
+     <div className="col-6 my-2">
+    <img className='about' src={programming} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="0"
+      data-purecounter-end="5"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Programming language</span>
+    </div>
      {/* <div className='col-6 my-3'>
       <img className='rounded about' src={gfg} alt='' width={50} height={50}></img> 
       <br></br>
@@ -235,11 +300,11 @@ const [name, setName] = useState('');
  </div>
 {/* Skills */}
 <div className='  m-5'  id='skills'>
-<h2 className='text-center mb-3'>My <span className='text-success'>Skills</span></h2>
+<h2 className='text-center mb-3'>My <span className='skill-title'>Skills</span></h2>
   <p className=' lead  '>Dedicated to crafting aesthetic user experiences with modern front-end architecture, I embrace the responsibility of creating visually compelling digital journeys.</p>
   <div className='row'>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-     <h3 className='m-1 h4'>Language & Script </h3>
+     <h3 className='m-1 h4 skill-title'>Language & Script </h3>
     <img className='m-3' src={c} alt='' width={50} height={50}></img> 
     <img className='m-3' src={cplus} alt='' width={50} height={50}></img> 
     <img className='m-3' src={java} alt='' width={50} height={50}></img> 
@@ -251,7 +316,7 @@ const [name, setName] = useState('');
     <img className='m-3' src={github} alt='' width={50} height={50}></img> 
     </div>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-     <h3 className='m-1 h4'>Framework & Libaries & Tools </h3>
+     <h3 className='m-1 h4 skill-title'>Framework & Libaries & Tools </h3>
     <img className='m-3' src={bootstrap} alt='' width={50} height={50}></img> 
     <img className='m-3' src={react} alt='' width={50} height={50}></img> 
     <img className='m-3' src={node} alt='' width={50} height={50}></img> 
@@ -259,7 +324,7 @@ const [name, setName] = useState('');
     <img className='m-3' src={vscode} alt='' width={50} height={50}></img> 
     </div>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
-     <h3 className='m-1 h4'>Databases </h3>
+     <h3 className='m-1 h4 skill-title'>Databases </h3>
     <img className='m-3 ' src={mongodb} alt='' width={50} height={50}></img> 
     <img className='m-3' src={mysql} alt='' width={50} height={50}></img> 
     {/* <h3 className='m-4 h4'>Others</h3>
@@ -272,7 +337,7 @@ const [name, setName] = useState('');
 <section id="resume" class="resume">
     <div class="container">
       <div class="section-title">
-        <h1 className='text-center'>My <span className='text-success'>Resume</span></h1>
+        <h1 className='text-center'>My <span className='resume-tit'>Resume</span></h1>
       </div>
 
       <div class=" row resume-block">
@@ -337,7 +402,7 @@ const [name, setName] = useState('');
     </div>
   </section>
  {/* Projects*/}
- <h2 className='text-center  mt-5'>My <span className='text-success'>Projects</span></h2>
+ <h2 className='text-center  mt-5'>My <span className='project-title'>Projects</span></h2>
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
@@ -385,7 +450,7 @@ const [name, setName] = useState('');
 
  {/* contact */}
  <div id='contact' class="contact-form">
- <h1 className='text-center h2 m-3 p-3 mb-5'>Contact <span class='text-success'> Me</span></h1>
+ <h1 className='text-center h2 m-3 p-3 mb-5'>Contact <span class='contact-title'> Me</span></h1>
  <div className='container row' >
   <div className=' container col-sm-10 col-md-6 col-lg-6 col-xl-6 align-item-center justify-content-center '>
         <form onSubmit={handleSubmit } className='emailForm' ref={form}>
@@ -426,7 +491,7 @@ const [name, setName] = useState('');
  </div>
  </div>
  {/* footer */}
- <h3 className='text-light h2 text-center align-item-center m-3 p-3 let-connect'>Let's <span className='text-success'> connect</span></h3>
+ <h3 className='text-light h2 text-center align-item-center m-3 p-3 let-connect'>Let's <span className='connect-title'> connect</span></h3>
  <div className='container row   my-3  '>
   <div className=' col-sm-12  col-md-12 col-lg-12 col-xl-12 '>
     <div className=' d-flex  fa-footer '>
@@ -442,7 +507,7 @@ const [name, setName] = useState('');
     </div>
   </div>
  </div>
- <h1 className='text-center h6'> Developed  By <span className='text-success'>Sudarmani</span> <span className='text-ligh '>🤍 </span> </h1>
+ <h1 className='text-center h6'> Developed  By <span className='final-footer'>Sudarmani</span> <span className='text-ligh '>🤍 </span> </h1>
  </div>
 }
 </div>

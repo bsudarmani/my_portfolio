@@ -39,7 +39,7 @@ body{
      font-size:27px; 
     padding: 10px 10px;
     margin:10px 10px; 
-    color:#198957;
+    color:#18d26e;
 }
 .fa-home:hover{
   color: #000;
@@ -67,7 +67,7 @@ body{
 }
 .fa-footer i:hover{
 clip-path: circle();
- background-color: #198957;
+ background-color: #18d26e;
 }
 .card{
     background-color: #212526;
@@ -78,20 +78,23 @@ clip-path: circle();
 .h7{
     font-family: 'Londrina Outline', sans-serif;
      font-size: 80px;
-     color:#198957;
+     color:#18d26e;
   }
   .fa-head i:hover{
     clip-path: circle();
-    background-color: #198957;
+    background-color: #18d26e;
   }
-
+/* about */
+.about-title{
+  color: #18d26e;
+}
 /* cursor */
 
 .custom-cursor-inner {
     position: fixed;
     width: 27px;
     height:29px;
-    background-color: #198957; /* Inner ball color */
+    background-color: #18d26e; /* Inner ball color */
     border-radius: 50%; /* Make it a circle */
     pointer-events: none;
     z-index: 9999;
@@ -135,10 +138,26 @@ clip-path: circle();
 .pre-loader {
    display: flex;
 }
+.get-resume
+{
+  background-color: #18d26e;
+}
+.submit{
+  background-color: #18d26e;
+  color: #fff;
+}
+.final-footer
+{
+  color:#18d26e;
+}
+.connect-title{
+  color: #18d26e;
+}
 @media only screen and (min-width: 300px) and  (max-width: 400px) {
   .h7{
-    font-size: 50px;
+    font-size: 70px;
     margin: 0px 0px;
+    color: #18d26e;
   }
   .rounded{
     margin: 0px -10px;
@@ -197,7 +216,10 @@ clip-path: circle();
     margin: 10px 50px;
   }
 }
-
+.skill-title
+{
+  color: #18d26e;
+}
 .projects {
   /* border: 1px solid hsl(228, 15%, 15%); */
   width:500px;
@@ -267,6 +289,14 @@ clip-path: circle();
 
 .projects__card:hover .projects__modal {
   bottom: 0;
+}
+.project-title
+{
+  color: #18d26e;
+}
+.contact-title
+{
+  color:#18d26e
 }
 @media (min-width:300px) and (max-width:400px)
 {
@@ -361,7 +391,10 @@ clip-path: circle();
     margin-left: 120px;
   }
 }
-
+.resume-tit
+{
+ color: #18d26e;
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -420,4 +453,42 @@ clip-path: circle();
   top: 0;
   background: #18d26e;
   border: 2px solid #18d26e;
+}
+
+.counts {
+  padding: 0px;
+}
+
+.counts .count-box {
+  /* padding: 30px 30px 25px 30px; */
+  /* width: 100%; */
+  position: relative;
+  text-align: center;
+  /* background: rgba(255, 255, 255, 0.08); */
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: #18d26e;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+.counts .count-box span {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1px;
 }
