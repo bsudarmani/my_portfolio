@@ -357,7 +357,8 @@ clip-path: circle();
 .projects__button {
   /* color: hsl(228, 8%, 95%); */
   /* color:#18d26e; */
-  color:#000;
+  /* color:#000; */
+  color:#fff;
   font-size: 17px
 }
 
@@ -369,7 +370,8 @@ clip-path: circle();
 .projects__title {
   font-size: 30px;
   margin-bottom: .75rem;
-  color:#000;
+  /* color:#000; */
+  color:#fff
   /* color:#18d26e; */
 }
 
