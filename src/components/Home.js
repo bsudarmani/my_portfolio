@@ -3,7 +3,7 @@ import graduation from '../images/graduation-cap.svg'
 import project from '../images/project.png';
 import programming from '../images/programming.png';
 import certificate from '../images/certificate.svg';
-// import gfg from '../images/greeksforgeeks.png';
+import gfg from '../images/gfg.png';
 import tool from '../images/tool.svg';
 // import developer from '../images/web-developer.svg'
 import html from '../images/html-5.svg';
@@ -37,11 +37,16 @@ import emailjs from '@emailjs/browser';
 import PuffLoader from "react-spinners/PuffLoader";
 import project1 from '../images/project1 (1).png';
 import project2 from '../images/project21 (1).png';
+import project3 from '../images/project3 (2).png';
+import project4 from '../images/project4 (1).png';
+import inter from '../images/intership.png';
+import iocode from '../images/iocodecraft.png'
 import CountUp from 'react-countup';
 // import PureCounter from '@srexi/purecounterjs';
 // import PureCounter from 'purecounterjs';
 import PureCounter from '@srexi/purecounterjs';
-
+// import AnimatedCursor from "react-animated-cursor";
+import Cursor from './cursor';
 const Home=()=>
 {
    const [loading,setloading]=useState(false);
@@ -53,7 +58,7 @@ const Home=()=>
     },5000)
    },[])
      const [text]=useTypewriter({
-    words:[   "MERN Stack developer."," Web developer ." ,"Java developer .","Js Developer."],
+    words:["MERN Stack developer.","MEAN Stack developer."," Web developer." ,"Java developer.","Js Developer.","Android App developer."],
    loop:false,
     typeSpeed:50,
     deleteSpeed:100,
@@ -96,25 +101,27 @@ const [name, setName] = useState('');
   }
 
   //cursor
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  // const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
+  // useEffect(() => {
+  //   const handleMouseMove = (e) => {
+  //     setPosition({ x: e.clientX, y: e.clientY });
+  //   };
 
-    document.addEventListener('mousemove', handleMouseMove);
+  //   document.addEventListener('mousemove', handleMouseMove);
 
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('mousemove', handleMouseMove);
+  //   };
+  // }, []);
   useEffect(() => {
     new PureCounter();
   }, []);
   const pure = new PureCounter();
     return(
+ 
  <div className='container overflow-hidden ' >
+   <Cursor/>
   <div className=''>
   {/* navbar */}
   {/* <Navbar expand="sm" >
@@ -147,11 +154,11 @@ const [name, setName] = useState('');
     </div> 
   :
 <div>
-<div className="custom-cursor-outer " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
- <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
+{/* <div className="custom-cursor-outer " style={{ left: `${position.x}px`, top: `${position.y}px` }} />
+ <div className="custom-cursor-inner " style={{ left: `${position.x}px`, top: `${position.y}px` }} /> */}
  {/* home */}
 <div className=' row  home ' id='home'>
-       <div className=' col-sm-12 col-md-6 col-lg-6 col-xl-6 py-1'>
+       <div className=' col-sm-12 col-md-6 col-lg-6 col-xl-6 py-1 home1'>
              <div className='m-5'>
                  <div className='align-item-center'>
                     {/* <h4 className='text-light'>WELCOME TO  MY WEB PAGE</h4> */}
@@ -281,6 +288,18 @@ const [name, setName] = useState('');
       </span>
         <span className='h5 about-letter'><span className='about-title'>+</span>Programming language</span>
     </div>
+
+    <div className="col-6 my-2">
+    <img className='about' src={gfg} alt='' width={80} height={80} />
+     <br></br>
+    <span
+      data-purecounter-start="10"
+      data-purecounter-end="110"
+      data-purecounter-duration="1"
+      className="purecounter h5 about-letter">
+      </span>
+        <span className='h5 about-letter'><span className='about-title'>+</span>Practice Problem Solved</span>
+    </div>
      {/* <div className='col-6 my-3'>
       <img className='rounded about' src={gfg} alt='' width={50} height={50}></img> 
       <br></br>
@@ -406,7 +425,7 @@ const [name, setName] = useState('');
  <p className='text-center lead'>Showcasing my web development projects to demonstrate creativity and technical proficiency on my portfolio.</p>
  <div className=' row' id='project'>
 
- <div className='container col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 '>
+ <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
  <section class="projects section" id="projects">
   <div class="projects__container container grid">
     <article class="projects__card">
@@ -427,7 +446,7 @@ const [name, setName] = useState('');
 </section>
    </div>
 
-   <div className='container col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 '>
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
  <section class="projects section" id="projects">
   <div class="projects__container container grid">
     <article class="projects__card">
@@ -446,6 +465,94 @@ const [name, setName] = useState('');
   </div>
 </section>
    </div>
+
+ <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={project3} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">Employee Management System</h2>
+        <span class="projects__subtitle mx-5 mb-2">Developed an Employee Management System to streamline employee data management, including storing, updating, and retrieving employee details. The system features user-friendly interfaces, secure data handling, and efficient functionality for improved organizational workflows.</span>
+       
+        <a href="https://employeecurd.netlify.app/" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/employee_curd-front' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={project4} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">Learning Management System</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project is a Learning Management System designed to allow users to purchase and access courses seamlessly. It features Stripe payment gateway integration for secure and efficient payment processing, enhancing user experience and simplifying course enrollment.</span>
+       
+        <a href="https://selflearningoauth.netlify.app/" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/Oauth_front' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={inter} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">E-Ring</h2>
+        <span class="projects__subtitle mx-5 mb-2">During my internship, I utilized HTML, CSS, and JavaScript along with Bootstrap to develop a static website featuring dynamic content. I leveraged jQuery to handle various interactive elements, including a slick slider for enhanced user experience.</span>
+       
+        <a href="https://heptoring.netlify.app/" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/Ring_hepto' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={iocode} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">iocodecraft</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project is an online code editor built using React.js, designed to provide a platform for users to write, edit, and execute code in real-time. It features a user-friendly interface, syntax highlighting, and live preview capabilities to enhance coding efficiency and learning experience.</span>
+       
+        <a href="https://iocodecraft.netlify.app/" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/CodeCraft' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
  </div>
 
  {/* contact */}
