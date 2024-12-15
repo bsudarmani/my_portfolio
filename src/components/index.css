@@ -355,7 +355,9 @@ clip-path: circle();
 
 .projects__subtitle,
 .projects__button {
-  color: hsl(228, 8%, 95%);
+  /* color: hsl(228, 8%, 95%); */
+  /* color:#18d26e; */
+  color:#000;
   font-size: 17px
 }
 
@@ -367,6 +369,8 @@ clip-path: circle();
 .projects__title {
   font-size: 30px;
   margin-bottom: .75rem;
+  color:#000;
+  /* color:#18d26e; */
 }
 
 .projects__button {
