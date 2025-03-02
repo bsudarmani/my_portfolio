@@ -14,7 +14,7 @@ import github  from '../images/github1.svg';
 import c from '../images/c-original.svg';
 import cplus from '../images/c++.svg';
 import java from '../images/java-original-wordmark.svg';
-import php from '../images/php.svg';
+// import php from '../images/php.svg';
 import react from '../images/react.svg';
 import node from '../images/node-js.svg';
 import express from '../images/expressjs.svg';
@@ -22,9 +22,21 @@ import vscode from '../images/vscode.svg';
 import bootstrap from '../images/bootstrap.svg';
 import mongodb from '../images/mongodb.svg';
 import mysql from '../images/mysql.svg';
-// import npm from '../images/npm.svg';
+import npm from '../images/npm.svg';
 // import xampp from '../images/xampp.svg';
+import vite from '../images/Vite.js.svg'
+import jwt from '../images/jwt.svg'
+import kotlin from '../images/kotlin.svg';
+import gitfront from '../images/gitfront.svg';
+import android from '../images/android.svg';
+import andoidstudio from '../images/android-studio.svg';
+import jetpack from '../images/jetpackback.png';
+import firebase from '../images/firebase-1.svg';
+import postman from '../images/postmanback.png';
+import retrofit from '../images/retrofitback.png'
 import weather from  '../images/weather.svg';
+import tourpackage from '../images/travel.png';
+import paintapp from '../images/paintapp.jpeg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
@@ -324,34 +336,46 @@ const [name, setName] = useState('');
   <div className='row'>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
      <h3 className='m-1 h4 skill-title'>Language & Script </h3>
-    <img className='m-3' src={c} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={cplus} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={java} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={php} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={html} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={css} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={js} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={git} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={github} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={c} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={cplus} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={java} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={js} alt='' width={50} height={50}></img> 
+    {/* <img className='m-3' src={php} alt='' width={50} height={50}></img>  */}
+    <img className='m-2' src={kotlin} alt='' width={40} height={50}></img>
+    <img className='m-2' src={html} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={css} alt='' width={50} height={50}></img> 
     </div>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
      <h3 className='m-1 h4 skill-title'>Framework & Libaries & Tools </h3>
-    <img className='m-3' src={bootstrap} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={react} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={node} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={express} alt='' width={100} height={100}></img> 
-    <img className='m-3' src={vscode} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={bootstrap} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={npm} alt='' width={50} height={50}></img>
+    <img className='m-2' src={vite} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={react} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={node} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={express} alt='' width={60} height={70}></img> 
+    <img className='m-2' src={jwt} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={git} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={github} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={gitfront} alt='' width={50} height={50}></img>
+    <img className='m-2' src={vscode} alt='' width={50} height={50}></img> 
+    <img className='m-2' src={android} alt='' width={50} height={50}></img>
+    <img className='m-2' src={jetpack} alt='' width={50} height={50}></img>
+    <img className='m-2' src={postman} alt='' width={50} height={50}></img>
+    <img className='m-2' src={andoidstudio} alt='' width={50} height={50}></img>
+    <img className='m-1' src={retrofit} alt='' width={100} height={70}></img>
     </div>
     <div className='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
      <h3 className='m-1 h4 skill-title'>Databases </h3>
-    <img className='m-3 ' src={mongodb} alt='' width={50} height={50}></img> 
-    <img className='m-3' src={mysql} alt='' width={50} height={50}></img> 
+    <img className='m-2 ' src={mongodb} alt='' width={50} height={50}></img> 
+    {/* <img className='m-2' src={mysql} alt='' width={50} height={50}></img> */}
+    <img className='m-2' src={firebase} alt='' width={50} height={50}></img>  
     {/* <h3 className='m-4 h4'>Others</h3>
     <img className='mx-2' src={npm} alt='' width={50} height={50}></img> 
     <img className='mx-2' src={xampp} alt='' width={50} height={50}></img>  */}
     </div>
   </div>
 </div>
+
 {/* resume */}
 <section id="resume" class="resume">
     <div class="container">
@@ -552,6 +576,58 @@ const [name, setName] = useState('');
   </div>
 </section>
    </div>
+
+
+
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={tourpackage} alt="projects image" class="projects__img"/>
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">zholidays</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project, Zholidays, is a tour booking system integrating OAuth, Razorpay, Amadeus API, Gemini AI, Google Calendar, and FastSMS OTP</span>
+       
+        <a href="https://zholidays.netlify.app" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/tour-node' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={paintapp} alt="projects image" class="projects__img" />
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">PaintApp</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project, Paint App, is built with Kotlin and Jetpack Compose, allowing drawing, color selection, brush size adjustment, erasing, and saving to storage.</span>
+       
+        <a href="https://github.com/bsudarmani/PaintBrush_App" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href='https://github.com/bsudarmani/PaintBrush_App' class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
+
+
+
+
+
 
  </div>
 
