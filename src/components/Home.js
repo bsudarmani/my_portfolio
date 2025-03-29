@@ -51,6 +51,7 @@ import project1 from '../images/project1 (1).png';
 import project2 from '../images/project21 (1).png';
 import project3 from '../images/project3 (2).png';
 import project4 from '../images/project4 (1).png';
+import rideapp from '../images/rideapp.jpeg';
 import inter from '../images/intership.png';
 import iocode from '../images/iocodecraft.png'
 import CountUp from 'react-countup';
@@ -586,8 +587,8 @@ const [name, setName] = useState('');
     <article class="projects__card">
       <img src={tourpackage} alt="projects image" class="projects__img"/>
       <div class="projects__modal">
-      <h2 class="projects__title my-3">zholidays</h2>
-        <span class="projects__subtitle mx-5 mb-2">This project, Zholidays, is a tour booking system integrating OAuth, Razorpay, Amadeus API, Gemini AI, Google Calendar, and FastSMS OTP</span>
+      <h2 class="projects__title my-3">zholidays ChatBot</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project, Zholidays, is a tour booking system integrating OAuth, Razorpay, Amadeus API, Gemini AI, Google Calendar, and FastSMS OTP.</span>
        
         <a href="https://zholidays.netlify.app" class="projects__button mb-1">
         <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
@@ -625,6 +626,27 @@ const [name, setName] = useState('');
    </div>
 
 
+
+   <div className='container col-sm-12 col-md-6 col-lg-5 col-xl-5 mb-5 '>
+ <section class="projects section" id="projects">
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <img src={rideapp} alt="projects image" class="projects__img" />
+      <div class="projects__modal">
+      <h2 class="projects__title my-3">Booking with Sos Alert App</h2>
+        <span class="projects__subtitle mx-5 mb-2">This project,Booking App with SOS Alert – A Kotlin-based app with Jetpack Compose, featuring Google OAuth, Ola Maps, SOS alerts, insurance, and Firebase integration.</span>
+       
+        <a href="https://github.com/Thangapandian81/Suraksha-Go" class="projects__button mb-1">
+        <span>View demo <i class=" fa  fa-solid fa-link"></i></span>
+        </a>
+        <a href="https://github.com/Thangapandian81/Suraksha-Go" class="projects__button">
+        <span>Github <i class="fa fa-github"></i></span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+   </div>
 
 
 
