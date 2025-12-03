@@ -85,3 +85,6 @@ A modern, fully responsive **Personal Portfolio Website** built using **React.js
 ├── index.css
 ├── Home.jsx
 └── App.js
+
+<img width="1346" height="642" alt="Screenshot (327)" src="https://github.com/user-attachments/assets/c265e336-bfb4-4bf9-ba28-c31a9f078594" />
+
