@@ -2,23 +2,26 @@
 
 A modern, fully responsive **Personal Portfolio Website** built using **React.js**, showcasing my skills, projects, experience, and contact details with smooth UI animations and real-time features.
 
+---
 
 ## 🔗 Live Demo
 
 👉 https://sudarmani.netlify.app/home  
 
+---
 
 ## 🏷️ Project Type
 
 **React Frontend Portfolio Web Application**
 
+---
 
 ## 🧑‍💻 Developer
 
 **Sudarmani B**  
-B.Sc Computer Science (2022–2025)  
-Ayya Nadar Janaki Ammal College, Sivakasi  
-App Developer & Full Stack Web Developer  
+- B.Sc Computer Science (2022–2025)  
+- Ayya Nadar Janaki Ammal College, Sivakasi  
+- App Developer & Full Stack Web Developer  
 
 ---
 
@@ -31,7 +34,7 @@ App Developer & Full Stack Web Developer
 - Kotlin  
 - Java  
 - C  
-- C++
+- C++  
 
 ### ⚙️ Frameworks & Libraries
 - React.js  
@@ -60,21 +63,22 @@ App Developer & Full Stack Web Developer
 
 ## ✨ Key Features
 
-✅ Fully Responsive Design  
-✅ Typewriter Animation Text  
-✅ Animated Skill Counters (PureCounter)  
-✅ Project Showcase with Live Demo & GitHub Links  
-✅ Email Contact Form using EmailJS  
-✅ Loader Animation  
-✅ Interactive Cursor Animation  
-✅ Social Media Integration  
-✅ Resume Section  
-✅ Modern UI & UX Design  
+- ✅ Fully Responsive Design  
+- ✅ Typewriter Animation Text  
+- ✅ Animated Skill Counters (PureCounter)  
+- ✅ Project Showcase with Live Demo & GitHub Links  
+- ✅ Email Contact Form using EmailJS  
+- ✅ Loader Animation  
+- ✅ Interactive Cursor Animation  
+- ✅ Social Media Integration  
+- ✅ Resume Section  
+- ✅ Modern UI & UX Design  
 
 ---
 
 ## 📂 Folder Structure
 
+```txt
 /src
 ├── /images
 ├── /components
